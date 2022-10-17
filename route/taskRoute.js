@@ -5,4 +5,8 @@ route.get(`/`,taskController.index)
 route.get(`/create`,taskController.new)
 route.get(`/edit/:id`,taskController.edit)
 
+route.post(`/newTask`, taskController.createTask)
+route.post(`/updateTask/:id`, taskController.updatetask)
+route.get(`/delete/:id`, taskController.deleteTask)
+
 module.exports=route
